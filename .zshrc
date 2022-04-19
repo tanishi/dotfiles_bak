@@ -1,3 +1,4 @@
+export DOCKER_HOST=unix:///var/run/docker.sock
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -81,7 +82,6 @@ export DefaultIMModule=fcitx
 export LESSCHARSET=utf-8
 export LANG=C
 export LC_CTYPE=ja_JP.UTF-8
-xset -r 49
 
 if [ $SHLVL = 1 ] ; then
   xset -r 49  > /dev/null 2>&1
