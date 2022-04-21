@@ -45,6 +45,14 @@ fpath=(${ASDF_DIR}/completions $fpath)
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/exports.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+case ${OSTYPE} in
+    darwin*)
+        source $ZDOTDIR/mac.zsh
+        ;;
 
-[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
+    linux*)
+        source $ZDOTDIR/linux.zsh
+        ;;
+esac
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
