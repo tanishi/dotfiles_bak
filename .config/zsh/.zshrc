@@ -46,3 +46,5 @@ source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/exports.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
